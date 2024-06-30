@@ -53,16 +53,5 @@
     "brand": "samsung",
     "tags": ["tv", "electronics"],
     "image": "../ProductImages/5.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Phone",
-    "description": "A smartphone with excellent features",
-    "price": 500,
-    "category": "phones",
-    "color": "white",
-    "brand": "BrandB",
-    "tags": ["phones", "electronics"],
-    "image": "../ProductImages/1.png"
   }
 ]
