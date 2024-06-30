@@ -1,0 +1,125 @@
+.nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 30px 50px;
+    gap: 15px;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.nav .categories_button {
+    display: flex;
+    align-items: center;
+    background-color: #e5e7e8;
+    border-radius: 10px;
+}
+
+.nav .categories_button .categories_button_text {
+    padding: 0 30px;
+    border-right: 1px solid #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav .categories_button div {
+    position: absolute;
+    background-color: #e5e7e8;
+    transform: translateY(180px);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+.nav .categories_button div a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav .hot_deals_button {
+    padding: 0 55px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: #ffc600;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.nav .hot_deals_button img {
+    width: 50px;
+    scale: 1.2;
+    position: absolute;
+    transform: translateX(70px) scale(1.15);
+}
+
+.nav .hot_deals_button p:nth-child(1) {
+    margin-top: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav .hot_deals_button p:nth-child(2) {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav .search_box {
+    width: 100%;
+}
+
+.nav .search_box .search_bar {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e5e7e8;
+    width: calc(100% - 20px);
+    padding: 0 0 0 20px;
+}
+
+.nav .user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav .user a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav .user .logout_button,
+.nav .user .signup_button {
+    border: 1px solid #00000020;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav .user .login_button {
+    background-color: #ffc600;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav .shopping_cart,
+.nav .favourites {
+    height: 25px;
+    width: 25px;
+}

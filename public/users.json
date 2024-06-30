@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "cart": []
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "cart": []
+    }
+  ]
+  

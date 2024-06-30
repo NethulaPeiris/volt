@@ -1,0 +1,70 @@
+.productPage {
+    margin: 60px 50px 30px 50px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.productPage h1 {
+    margin-bottom: 30px;
+}
+
+.productPage img {
+    border-radius: 10px;
+    width: 40%;
+}
+
+.productPage .description {
+    margin-bottom: 30px;
+}
+
+.productPage .price {
+    font-weight: 600;
+}
+
+.productPage .addto_cart {
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.productPage .quantity {
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.productPage .addto_favourites {
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.productPage .actions {
+    display: flex;
+    align-items: center;
+}
+
+.productPage .rate {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.productPage .rate p {
+    background-color: #eeeeee;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.productPage .rate p:hover {
+    background-color: #dddddd;
+}

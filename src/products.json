@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "SAMSUNG Galaxy S24 Ultra",
+    "description": "SAMSUNG Galaxy S24 Ultra Cell Phone, 256GB AI Smartphone, Unlocked Android, 200MP, 100x Zoom Cameras, Long Battery Life, S Pen, US Version, 2024, Titanium Black",
+    "price": 434126.94,
+    "category": "phones",
+    "color": "black",
+    "brand": "samsung",
+    "tags": ["laptops", "electronics"],
+    "image": "../ProductImages/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Xiaomi Redmi Watch 3 Active",
+    "description": "Xiaomi Redmi Watch 3 Active Smart Watch Fitness Tracker with 100 Sport Modes, Blood Oxygen Heart Rate Sleep Monitor, Bluetooth Phone Call Watch for iPhone Android, White",
+    "price": 21397.57,
+    "category": "watches",
+    "color": "white",
+    "brand": "redimi",
+    "tags": ["watches", "electronics"],
+    "image": "../ProductImages/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "LENOVO IdeaPad 1",
+    "description": "LENOVO IdeaPad 1 Laptop, 15.6” FHD Display, Intel Celeron N4500 Processor, 12GB RAM, 512GB SSD, SD Card Reader, Numeric Keypad, HDMI, Wi-Fi 6, Windows 11 Home, 1 Year Office 365, Black",
+    "price": 109754.63,
+    "category": "laptops",
+    "color": "black",
+    "brand": "lenovo",
+    "tags": ["laptops", "electronics"],
+    "image": "../ProductImages/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "SAMSUNG Galaxy Tab S6 Lite",
+    "description": "SAMSUNG Galaxy Tab S6 Lite (2024) 10.4 64GB WiFi Android Tablet, S Pen Included, Gaming Ready, Long Battery Life, Slim Metal Design, Expandable Storage, US Version, Chiffon Pink, Amazon Exclusive",
+    "price": 76427.74,
+    "category": "tablets",
+    "color": "pink",
+    "brand": "samsung",
+    "tags": ["tablets", "electronics"],
+    "image": "../ProductImages/4.png"
+  },
+  {
+    "id": 5,
+    "name": "SAMSUNG 65-Inch Class OLED TV",
+    "description": "SAMSUNG 65-Inch Class OLED 4K S90C Series Quantum HDR, Dolby Atmos Object Tracking Sound Lite, Ultra Thin, Q-Symphony 3.0, Gaming Hub, Smart TV with Alexa Built-in (QN65S90C, 2023 Model), Titan Black",
+    "price": 408446.20,
+    "category": "tv",
+    "color": "black",
+    "brand": "samsung",
+    "tags": ["tv", "electronics"],
+    "image": "../ProductImages/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Phone",
+    "description": "A smartphone with excellent features",
+    "price": 500,
+    "category": "phones",
+    "color": "white",
+    "brand": "BrandB",
+    "tags": ["phones", "electronics"],
+    "image": "../ProductImages/1.png"
+  }
+]
