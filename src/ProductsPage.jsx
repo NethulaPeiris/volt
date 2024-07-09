@@ -70,6 +70,8 @@ function ProductsPage({ user, updateUserCart }) {
           <option value="phones">Phones</option>
           <option value="tablets">Tablets</option>
           <option value="watches">Smart Watches</option>
+          <option value="monitors">Monitors</option>
+          <option value="ear_buds">Ear Buds</option>
           <option value="tv">TV</option>
         </select>
         <select name="color" onChange={handleFilterChange}>

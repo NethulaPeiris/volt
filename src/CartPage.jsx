@@ -1,8 +1,10 @@
 import React from 'react';
+import './css/Cart.css';
+import { IoTrashBin } from "react-icons/io5";
 
 function CartPage({ user, updateUserCart }) {
   if (!user) {
-    return <div>Please log in to view your cart.</div>;
+    return <div className='cartPage'>Please log in to view your cart.</div>;
   }
 
   const removeFromCart = (productId) => {
@@ -15,20 +17,21 @@ function CartPage({ user, updateUserCart }) {
   };
 
   return (
-    <div>
+    <div className='cartPage'>
       <h1>Cart</h1>
       {user.cart.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        <div>
-          <ul>
-            {user.cart.map((item, index) => (
-              <li key={index}>
-                {item.name} - ${item.price} x {item.quantity} = ${item.price * item.quantity}
-                <button onClick={() => removeFromCart(item.id)}>Remove</button>
-              </li>
-            ))}
-          </ul>
+        <div className='items'>
+          {user.cart.map((item, index) => (
+            <div className='item' key={index}>
+              <p>{item.name}</p>
+              <p>Rs. {item.price}</p>
+              <p>{item.quantity}</p>
+              <p>Rs. {item.price * item.quantity}</p>
+              <IoTrashBin onClick={() => removeFromCart(item.id)} />
+            </div>
+          ))}
           <button onClick={clearCart}>Clear Cart</button>
         </div>
       )}

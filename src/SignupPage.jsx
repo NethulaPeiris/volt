@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { addUser, getUser } from './indexedDB';
 import { useNavigate } from 'react-router-dom';
+import './css/LoginSignup.css';
 
 function SignupPage({ setUser }) {
   const [username, setUsername] = useState('');
@@ -34,7 +35,7 @@ function SignupPage({ setUser }) {
   };
 
   return (
-    <div>
+    <div className='loginSingupPage'>
       <h1>Signup</h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <input
@@ -48,7 +49,7 @@ function SignupPage({ setUser }) {
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-      />
+      /><br/>
       <button onClick={handleSignup}>Signup</button>
     </div>
   );

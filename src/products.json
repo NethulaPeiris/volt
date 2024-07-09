@@ -53,5 +53,27 @@
     "brand": "samsung",
     "tags": ["tv", "electronics"],
     "image": "../ProductImages/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "SAMSUNG 34” ViewFinity CJ79",
+    "description": "SAMSUNG 34” ViewFinity CJ79 Series Ultrawide QHD (3440x1440) Computer Monitor, 100Hz, Thunderbolt 3 Daisy Chain, QLED, HDMI, USB Hub, Height Adjustable Stand, LC34J791WTNXZA, White",
+    "price": 166967.26,
+    "category": "monitors",
+    "color": "white",
+    "brand": "samsung",
+    "tags": ["monitor", "electronics"],
+    "image": "../ProductImages/6.png"
+  },
+  {
+    "id": 7,
+    "name": "Apple AirPods (2nd Generation)",
+    "description": "Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case with AppleCare+ (2 Years)",
+    "price": 29804.72,
+    "category": "ear_buds",
+    "color": "white",
+    "brand": "apple",
+    "tags": ["apple", "electronics"],
+    "image": "../ProductImages/7.jpg"
   }
 ]

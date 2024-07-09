@@ -32,7 +32,7 @@ function ProductPage({ user, updateUserCart, updateUserFavorites, updateUserRati
       updatedCart = [...user.cart];
       updatedCart[existingProductIndex].quantity += quantity;
     } else {
-      updatedCart = [...user.cart, { id: product.id, quantity }];
+      updatedCart = [...user.cart, { id: product.id, name: product.name, price: product.price, quantity }];
     }
     updateUserCart(updatedCart);
   };
@@ -42,8 +42,14 @@ function ProductPage({ user, updateUserCart, updateUserFavorites, updateUserRati
       alert('Please log in to add items to favorites.');
       return;
     }
-    const updatedFavorites = [...user.favorites, { id: product.id }];
-    updateUserFavorites(updatedFavorites);
+    const existingFavoriteIndex = user.favorites.findIndex(item => item.id === product.id);
+    let updatedFavorites;
+    if (existingFavoriteIndex === -1) {
+      updatedFavorites = [...user.favorites, { id: product.id, name: product.name, price: product.price }];
+      updateUserFavorites(updatedFavorites);
+    } else {
+      alert('This item is already in your favorites.');
+    }
   };
 
   const rateProduct = async (rating) => {
@@ -68,7 +74,9 @@ function ProductPage({ user, updateUserCart, updateUserFavorites, updateUserRati
         <div>
           <p className='description'>{product.description}</p>
           <p className='price '>Rs. {product.price}</p>
-          <p>Average Rating: {averageRating.toFixed(1)} / 5</p>
+          <p>
+            Average Rating: {isNaN(averageRating) ? 'Not Rated' : averageRating.toFixed(1) + " / 5"}
+          </p>
           <div className='actions'>
             <input
               type="number"
@@ -80,10 +88,12 @@ function ProductPage({ user, updateUserCart, updateUserFavorites, updateUserRati
             <p className='addto_cart' onClick={addToCart}>Add to Cart</p>
             <p className='addto_favourites' onClick={addToFavorites}>Add to Favourites</p>
           </div>
-          <div className='rate'> 
+          <div className='rate'>
             <label>Rate this product: </label>
             {[1, 2, 3, 4, 5].map(star => (
+              <div>
               <p key={star} onClick={() => rateProduct(star)}>{star}</p>
+              </div>
             ))}
           </div>
         </div>

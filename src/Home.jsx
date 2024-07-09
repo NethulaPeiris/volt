@@ -1,11 +1,13 @@
 import React from 'react';
 import './css/Home.css'
 // import banner1 from './Img/banner1.jpg';
-import laptops from './Img/laptops.jpg'
-import phones from './Img/phones.jpg'
-import tablets from './Img/tabs.jpg'
-import watch from './Img/watch.png'
-import buds from './Img/buds.png'
+import laptops from './Img/laptops.jpg';
+import phones from './Img/phones.jpg';
+import tablets from './Img/tabs.jpg';
+import watch from './Img/watch.png';
+import buds from './Img/buds.png';
+import monitors from './Img/monitor.jpeg';
+import tv from './Img/tv.png';
 
 function Home() {
     return (
@@ -26,8 +28,8 @@ function Home() {
                     <a href='/products/tablets'><div><img src={tablets} alt='tablets' /><p>Tablets</p></div></a>
                     <a href='/products/watches'><div><img src={watch} alt='watch' /><p>Smart Watches</p></div></a>
                     <a href='/products/ear_buds'><div><img src={buds} alt='ear_buds' /><p>Ear Buds</p></div></a>
-                    <a href='/products/monitors'><div><img src={laptops} alt='laptops' /><p>Monitors</p></div></a>
-                    <a href='/products/tv'><div><img src={laptops} alt='laptops' /><p>Smart TV</p></div></a>
+                    <a href='/products/monitors'><div><img src={monitors} alt='laptops' /><p>Monitors</p></div></a>
+                    <a href='/products/tv'><div><img src={tv} alt='laptops' /><p>Smart TV</p></div></a>
                 </div>
             </div>
         </>

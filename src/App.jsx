@@ -64,6 +64,7 @@ function App() {
               <a href='/products/ear_buds'>Ear Buds</a>
               <a href='/products/monitors'>Monitors</a>
               <a href='/products/tv'>Smart TV</a>
+              <a href='/products'>All Categories</a>
             </div>
           </div>
           <div className="hot_deals_button">
