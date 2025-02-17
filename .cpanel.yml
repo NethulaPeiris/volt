@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - name: Install dependencies
+      command: npm install
+
+    - name: Build the React app
+      command: npm run build
+
+    - name: Deploy to public_html
+      command: rsync -av --delete build/ ~/public_html/
