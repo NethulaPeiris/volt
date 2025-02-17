@@ -7,5 +7,5 @@ deployment:
     - name: Build the React app
       command: npm run build
 
-    - name: Deploy to public_html
-      command: rsync -av --delete build/ ~/public_html/
+    - name: Deploy to public_html/test.acicts.lk
+      command: rsync -av --delete build/ ~/public_html/test.acicts.lk/
